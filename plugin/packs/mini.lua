@@ -1,7 +1,6 @@
 require("mini.icons").setup()
 require("mini.ai").setup()
-require("mini.pairs").setup()
-require("mini.completion").setup()
+-- require("mini.pairs").setup()
 require("mini.notify").setup()
 require("mini.bracketed").setup()
 require("mini.surround").setup()

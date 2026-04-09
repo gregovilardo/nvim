@@ -27,11 +27,21 @@ add_github_plugins({
 	"nvim-telescope/telescope-ui-select.nvim",
 	"stevearc/oil.nvim",
 	"nvim-mini/mini.nvim",
+
 	"mfussenegger/nvim-dap",
 	"rcarriga/nvim-dap-ui",
 	"nvim-neotest/nvim-nio",
+
 	"stevearc/conform.nvim",
+
 	"folke/which-key.nvim",
+
+	-- "saghen/blink.cmp",
+	"rafamadriz/friendly-snippets",
+})
+
+vim.pack.add({
+	{ src = "https://github.com/saghen/blink.cmp", version = "v1.10.2", build = "cargo build --release" },
 })
 
 -- this add the path of meson to current instance of neovim
