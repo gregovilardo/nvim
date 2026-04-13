@@ -1,3 +1,7 @@
+-- Extend PATH
+local npm_bin_path = vim.fn.expand("$HOME/.local/share/nvim/npm_manual_modules/bin")
+vim.env.PATH = npm_bin_path .. ":" .. vim.env.PATH
+
 vim.loader.enable()
 -- Hook para actualizar parsers automáticamente al instalar/actualizar nvim-treesitter
 vim.api.nvim_create_autocmd("User", {
@@ -36,8 +40,10 @@ add_github_plugins({
 
 	"folke/which-key.nvim",
 
-	-- "saghen/blink.cmp",
+	"saghen/blink.cmp",
 	"rafamadriz/friendly-snippets",
+
+	"MeanderingProgrammer/render-markdown.nvim",
 })
 
 vim.pack.add({

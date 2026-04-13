@@ -1,4 +1,18 @@
-local langs = { "python", "javascript", "rust", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" }
+local langs = {
+	"python",
+	"javascript",
+	"rust",
+	"c",
+	"lua",
+	"vim",
+	"vimdoc",
+	"query",
+	"markdown",
+	"markdown_inline",
+	"html",
+	"latex",
+	"yaml",
+}
 require("nvim-treesitter").install(langs)
 
 -- Register LTSA parser (custom parser not in nvim-treesitter registry)
