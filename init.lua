@@ -1,7 +1,3 @@
--- Extend PATH
-local npm_bin_path = vim.fn.expand("$HOME/.local/share/nvim/npm_manual_modules/bin")
-vim.env.PATH = npm_bin_path .. ":" .. vim.env.PATH
-
 vim.loader.enable()
 -- Hook para actualizar parsers automáticamente al instalar/actualizar nvim-treesitter
 vim.api.nvim_create_autocmd("User", {
@@ -26,9 +22,13 @@ add_github_plugins({
 	"nvim-treesitter/nvim-treesitter",
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
+
 	"nvim-telescope/telescope-fzf-native.nvim",
 	"nvim-telescope/telescope-smart-history.nvim",
 	"nvim-telescope/telescope-ui-select.nvim",
+	"isak102/telescope-git-file-history.nvim",
+	"tpope/vim-fugitive",
+
 	"stevearc/oil.nvim",
 	"nvim-mini/mini.nvim",
 
@@ -44,6 +44,8 @@ add_github_plugins({
 	"rafamadriz/friendly-snippets",
 
 	"MeanderingProgrammer/render-markdown.nvim",
+
+	-- "Thiago4532/mdmath.nvim",
 })
 
 vim.pack.add({
@@ -54,7 +56,7 @@ vim.pack.add({
 require("mason").setup()
 
 -- this enable the server that we define in lsp/
-local servers = { "clangd", "lua_ls" }
+local servers = { "clangd", "lua_ls", "pyright", "rust_analyzer" }
 vim.lsp.enable(servers)
 
 -- stand alone plugins without config or with priority

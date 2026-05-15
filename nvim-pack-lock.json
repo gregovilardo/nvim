@@ -21,6 +21,10 @@
       "rev": "b03fb0f20bc1d43daf558cda981a2be22e73ac42",
       "src": "https://github.com/mason-org/mason.nvim"
     },
+    "mdmath.nvim": {
+      "rev": "699acb27fd34bfdf92a43ce0abdd17f0c7a948fe",
+      "src": "https://github.com/Thiago4532/mdmath.nvim"
+    },
     "mini.nvim": {
       "rev": "2431902e78b76f435542d1e606f08475360068ca",
       "src": "https://github.com/nvim-mini/mini.nvim"
@@ -61,6 +65,10 @@
       "rev": "6fea601bd2b694c6f2ae08a6c6fab14930c60e2c",
       "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
     },
+    "telescope-git-file-history.nvim": {
+      "rev": "4442114f9257e682e60a8cb6de14cf988e26055c",
+      "src": "https://github.com/isak102/telescope-git-file-history.nvim"
+    },
     "telescope-smart-history.nvim": {
       "rev": "81a4cceaa54d65d5f7c7c26178ee63b634d3e26d",
       "src": "https://github.com/nvim-telescope/telescope-smart-history.nvim"
@@ -72,6 +80,10 @@
     "telescope.nvim": {
       "rev": "7ef4d6dccb78ee71e552bbd866176762ad328afa",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "vim-fugitive": {
+      "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
+      "src": "https://github.com/tpope/vim-fugitive"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",

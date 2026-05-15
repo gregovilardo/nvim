@@ -25,9 +25,20 @@ require("nvim-treesitter.parsers").ltsa = {
 	filetype = "ltsa",
 }
 
+require("nvim-treesitter.parsers").alloy = {
+	install_info = {
+		url = "https://github.com/fore-stun/tree-sitter-alloy",
+		files = { "src/parser.c" },
+		branch = "main",
+	},
+	filetype = "alloy",
+}
+
 -- Register language and filetype
 vim.treesitter.language.register("ltsa", "lts")
 vim.filetype.add({ extension = { lts = "ltsa" } })
+vim.treesitter.language.register("als", "alloy")
+vim.filetype.add({ extension = { als = "alloy" } })
 
 -- Add ltsa to the autocmd patterns for treesitter activation
 local all_langs = vim.list_extend(vim.list_slice(langs), { "ltsa" })
