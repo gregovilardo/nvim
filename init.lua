@@ -27,7 +27,9 @@ add_github_plugins({
 	"nvim-telescope/telescope-smart-history.nvim",
 	"nvim-telescope/telescope-ui-select.nvim",
 	"isak102/telescope-git-file-history.nvim",
+
 	"tpope/vim-fugitive",
+	"lewis6991/gitsigns.nvim",
 
 	"stevearc/oil.nvim",
 	"nvim-mini/mini.nvim",
@@ -44,8 +46,6 @@ add_github_plugins({
 	"rafamadriz/friendly-snippets",
 
 	"MeanderingProgrammer/render-markdown.nvim",
-
-	-- "Thiago4532/mdmath.nvim",
 })
 
 vim.pack.add({

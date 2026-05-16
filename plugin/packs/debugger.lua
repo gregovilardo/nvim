@@ -24,7 +24,7 @@ dap.configurations.c = {
 		end,
 		coreConfigs = {
 			{
-				programBinary = "build/Lab1.elf", --!TODO: Hacerlo automatico
+				programBinary = "build/ProximityCarSensorTrigEcho.elf", --!TODO: Hacerlo automatico
 			},
 		},
 	},
