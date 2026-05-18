@@ -46,6 +46,8 @@ add_github_plugins({
 	"rafamadriz/friendly-snippets",
 
 	"MeanderingProgrammer/render-markdown.nvim",
+
+	"/lervag/vimtex",
 })
 
 vim.pack.add({
