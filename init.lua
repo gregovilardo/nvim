@@ -19,7 +19,9 @@ end
 add_github_plugins({
 	"mason-org/mason.nvim",
 	"catppuccin/nvim",
+
 	"nvim-treesitter/nvim-treesitter",
+
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
 
@@ -47,19 +49,30 @@ add_github_plugins({
 
 	"MeanderingProgrammer/render-markdown.nvim",
 
-	"/lervag/vimtex",
+	"lervag/vimtex",
+
+	"akinsho/git-conflict.nvim",
 })
 
 vim.pack.add({
 	{ src = "https://github.com/saghen/blink.cmp", version = "v1.10.2", build = "cargo build --release" },
+	{ src = vim.fn.expand("$HOME/Programming/alloy.nvim") },
 })
+
+-- !TODO: Averiguar que esto ande bien
+-- vim.filetype.add({
+-- 	extension = {
+-- 		html = "htmldjango",
+-- 	},
+-- })
 
 -- this add the path of meson to current instance of neovim
 require("mason").setup()
 
 -- this enable the server that we define in lsp/
-local servers = { "clangd", "lua_ls", "pyright", "rust_analyzer" }
+local servers = { "clangd", "lua_ls", "marksman", "pyright", "rust_analyzer", "zls", "htmx", "html", "typescript_language_server" }
 vim.lsp.enable(servers)
 
 -- stand alone plugins without config or with priority
 require("oil").setup()
+-- require("mini.files").setup()

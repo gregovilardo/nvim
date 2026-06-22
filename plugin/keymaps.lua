@@ -38,7 +38,9 @@ set("n", "<M-s>", "<C-W>-")
 set('n', '<C-n>', ':bnext<CR>', { silent = true })
 set('n', '<C-p>', ':bprevious<CR>', { silent = true })
 
-set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory (oil.nvim)" })
+set("n", "<leader>e", function()
+  require("oil").open(nil, { preview = {} })
+end, { desc = "Open parent directory (oil.nvim)" })
 
 set("n", "<C-x>", ":bd<CR>", { desc = "Close current buffer" })
 

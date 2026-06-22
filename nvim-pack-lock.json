@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "alloy.nvim": {
+      "rev": "4e73bde2c64e5dcb35176c7d3bfebf9d9996de06",
+      "src": "/home/gregovilardo/Programming/alloy.nvim"
+    },
     "blink.cmp": {
       "rev": "456d38d1cd3743926f329204c2340f3e7840aad6",
       "src": "https://github.com/saghen/blink.cmp",
@@ -12,6 +16,10 @@
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
+    },
+    "git-conflict.nvim": {
+      "rev": "a1badcd070d176172940eb55d9d59029dad1c5a6",
+      "src": "https://github.com/akinsho/git-conflict.nvim"
     },
     "gitsigns.nvim": {
       "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",

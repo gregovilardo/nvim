@@ -12,6 +12,8 @@ local langs = {
 	"html",
 	"latex",
 	"yaml",
+	"zig",
+	-- "alloy6",
 }
 require("nvim-treesitter").install(langs)
 
@@ -25,20 +27,26 @@ require("nvim-treesitter.parsers").ltsa = {
 	filetype = "ltsa",
 }
 
-require("nvim-treesitter.parsers").alloy = {
-	install_info = {
-		url = "https://github.com/fore-stun/tree-sitter-alloy",
-		files = { "src/parser.c" },
-		branch = "main",
-	},
-	filetype = "alloy",
-}
-
 -- Register language and filetype
 vim.treesitter.language.register("ltsa", "lts")
 vim.filetype.add({ extension = { lts = "ltsa" } })
-vim.treesitter.language.register("als", "alloy")
-vim.filetype.add({ extension = { als = "alloy" } })
+
+-- vim.treesitter.language.register("alloy6", "alloy6")
+-- vim.filetype.add({ extension = { als = "alloy6" } })
+
+vim.api.nvim_create_autocmd("User", {
+	pattern = "TSUpdate",
+	callback = function()
+		require("nvim-treesitter.parsers").alloy6 = {
+			install_info = {
+				path = vim.fn.expand("~/Programming/tree-sitter-alloy6"),
+				files = { "src/parser.c" },
+				queries = "queries/alloy6",
+			},
+			filetype = "als",
+		}
+	end,
+})
 
 -- Add ltsa to the autocmd patterns for treesitter activation
 local all_langs = vim.list_extend(vim.list_slice(langs), { "ltsa" })
