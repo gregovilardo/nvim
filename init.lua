@@ -42,6 +42,8 @@ add_github_plugins({
 
 	"stevearc/conform.nvim",
 
+	"mfussenegger/nvim-lint",
+
 	"folke/which-key.nvim",
 
 	"saghen/blink.cmp",
@@ -70,7 +72,8 @@ vim.pack.add({
 require("mason").setup()
 
 -- this enable the server that we define in lsp/
-local servers = { "clangd", "lua_ls", "marksman", "pyright", "rust_analyzer", "zls", "htmx", "html", "typescript_language_server" }
+local servers =
+	{ "clangd", "lua_ls", "marksman", "pyright", "rust_analyzer", "zls", "htmx", "html", "typescript_language_server" }
 vim.lsp.enable(servers)
 
 -- stand alone plugins without config or with priority
