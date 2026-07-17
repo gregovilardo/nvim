@@ -12,5 +12,6 @@ require("conform").setup({
 		markdown = { "prettierd", "prettier", stop_after_first = true },
 		-- html = { "prettierd", "prettier", stop_after_first = true },
 		htmldjango = { "djlint" },
+		dart = { "dart_format" },
 	},
 })

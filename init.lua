@@ -21,6 +21,7 @@ add_github_plugins({
 	"catppuccin/nvim",
 
 	"nvim-treesitter/nvim-treesitter",
+	"nvim-flutter/flutter-tools.nvim",
 
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",

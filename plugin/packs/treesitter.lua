@@ -13,6 +13,7 @@ local langs = {
 	"latex",
 	"yaml",
 	"zig",
+	"dart",
 	-- "alloy6",
 }
 require("nvim-treesitter").install(langs)
