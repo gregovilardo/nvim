@@ -134,3 +134,17 @@ end)
 set("n", "<Leader>b", function()
 	require("dap").toggle_breakpoint()
 end)
+
+-- Toggle task checkbox on current line
+set("n", "<leader>tc", function()
+	local line = vim.api.nvim_get_current_line()
+	if line:match("^%s*[-*] %[.%] ") then
+		line = line:gsub("^(%s*[-*] )%[.%] ", "%1")
+	else
+		local prefix = line:match("^(%s*[-*] )")
+		if prefix then
+			line = prefix .. "[ ] " .. line:sub(#prefix + 1)
+		end
+	end
+	vim.api.nvim_set_current_line(line)
+end, { desc = "Toggle task checkbox" })
