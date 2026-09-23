@@ -6,4 +6,5 @@ wk.add({
 	{ "<leader>s", group = "splits and terminal" },
 	{ "<leader>h", group = "gitsigns hunks" },
 	{ "<leader>t", group = "toggle (gitsigns)" },
+	{ "<leader>a", group = "harpoon" },
 })

@@ -4,6 +4,10 @@
       "rev": "4e73bde2c64e5dcb35176c7d3bfebf9d9996de06",
       "src": "/home/gregovilardo/Programming/alloy.nvim"
     },
+    "async.nvim": {
+      "rev": "46adf61a022d5c923f981d527443f406e7d0f63e",
+      "src": "https://github.com/lewis6991/async.nvim"
+    },
     "blink.cmp": {
       "rev": "456d38d1cd3743926f329204c2340f3e7840aad6",
       "src": "https://github.com/saghen/blink.cmp",
@@ -28,6 +32,11 @@
     "gitsigns.nvim": {
       "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "harpoon": {
+      "rev": "87b1a3506211538f460786c23f98ec63ad9af4e5",
+      "src": "https://github.com/ThePrimeagen/harpoon",
+      "version": "'harpoon2'"
     },
     "markdown-preview.nvim": {
       "rev": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
@@ -77,6 +86,10 @@
       "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
+    "refactoring.nvim": {
+      "rev": "64e10d782ae5b9653558482910213b8946651456",
+      "src": "https://github.com/theprimeagen/refactoring.nvim"
+    },
     "render-markdown.nvim": {
       "rev": "0fd43fb4b1f073931c4b481f5f3b7cea3749e190",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
@@ -105,9 +118,13 @@
       "rev": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0",
       "src": "https://github.com/tpope/vim-fugitive"
     },
+    "vim-surround": {
+      "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
+      "src": "https://github.com/tpope/vim-surround"
+    },
     "vimtex": {
       "rev": "182ad387e3f3107699483606c9a2b6648f8437b2",
-      "src": "https://github.com//lervag/vimtex"
+      "src": "https://github.com/lervag/vimtex"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",

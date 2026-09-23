@@ -77,3 +77,13 @@ vim.opt.modeline = false
 vim.opt.completeopt = { "menuone", "noselect", "popup" }
 vim.o.pumborder = "rounded"
 vim.o.pummaxwidth = 40
+
+-- start to give ^M problems...
+-- vim.opt.fileformats = "unix,dos"
+--
+-- vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+-- 	pattern = { "*" }, -- Cambia esto por las extensiones que uses
+-- 	callback = function()
+-- 		vim.cmd("edit ++ff=dos")
+-- 	end,
+-- })

@@ -55,11 +55,16 @@ add_github_plugins({
 	"lervag/vimtex",
 
 	"akinsho/git-conflict.nvim",
+
+	"tpope/vim-surround",
+
+	"lewis6991/async.nvim",
+	"theprimeagen/refactoring.nvim",
 })
 
 vim.pack.add({
+	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
 	{ src = "https://github.com/saghen/blink.cmp", version = "v1.10.2", build = "cargo build --release" },
-	{ src = vim.fn.expand("$HOME/Programming/alloy.nvim") },
 })
 
 -- !TODO: Averiguar que esto ande bien

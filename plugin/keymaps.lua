@@ -148,3 +148,16 @@ set("n", "<leader>tc", function()
 	end
 	vim.api.nvim_set_current_line(line)
 end, { desc = "Toggle task checkbox" })
+
+-- Harpoon
+local harpoon = require("harpoon")
+set("n", "<leader>a", function() harpoon:list():add() end, { desc = "Add to harpoon list" })
+set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = "Toggle harpoon menu" })
+
+set("n", "<A-1>", function() harpoon:list():select(1) end, { desc = "Harpoon slot 1" })
+set("n", "<A-2>", function() harpoon:list():select(2) end, { desc = "Harpoon slot 2" })
+set("n", "<A-3>", function() harpoon:list():select(3) end, { desc = "Harpoon slot 3" })
+set("n", "<A-4>", function() harpoon:list():select(4) end, { desc = "Harpoon slot 4" })
+
+set("n", "<A-p>", function() harpoon:list():prev() end, { desc = "Harpoon previous buffer" })
+set("n", "<A-n>", function() harpoon:list():next() end, { desc = "Harpoon next buffer" })

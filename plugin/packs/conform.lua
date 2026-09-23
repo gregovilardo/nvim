@@ -14,4 +14,10 @@ require("conform").setup({
 		htmldjango = { "djlint" },
 		dart = { "dart_format" },
 	},
+	formatters = {
+		ruff_format = {
+
+			args = { "format", "--config", "line-length=100", "--stdin-filename", "$FILENAME", "-" },
+		},
+	},
 })
