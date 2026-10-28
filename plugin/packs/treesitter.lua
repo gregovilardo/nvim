@@ -14,6 +14,8 @@ local langs = {
 	"yaml",
 	"zig",
 	"dart",
+	"odin",
+	"kotlin",
 	-- "alloy6",
 }
 require("nvim-treesitter").install(langs)

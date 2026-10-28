@@ -8,6 +8,10 @@
       "rev": "46adf61a022d5c923f981d527443f406e7d0f63e",
       "src": "https://github.com/lewis6991/async.nvim"
     },
+    "avante.nvim": {
+      "rev": "8a26d930d7bc26857d4f897c7dba8bdd562d8448",
+      "src": "https://github.com/yetone/avante.nvim"
+    },
     "blink.cmp": {
       "rev": "456d38d1cd3743926f329204c2340f3e7840aad6",
       "src": "https://github.com/saghen/blink.cmp",
@@ -16,6 +20,14 @@
     "conform.nvim": {
       "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
       "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "copilot.lua": {
+      "rev": "c0774241783717b2a26ef4becf08c00bfd05415d",
+      "src": "https://github.com/zbirenbaum/copilot.lua"
+    },
+    "droid-nvim": {
+      "rev": "0e7bb9a60077b2cbd532243cc01735533b72f4e1",
+      "src": "https://github.com/rizukirr/droid-nvim"
     },
     "flutter-tools.nvim": {
       "rev": "7d1acfd139215e02d2784733af69a61aaebe06e8",
@@ -38,6 +50,14 @@
       "src": "https://github.com/ThePrimeagen/harpoon",
       "version": "'harpoon2'"
     },
+    "img-clip.nvim": {
+      "rev": "99848daf801789dbebe2192b475eb887d375002c",
+      "src": "https://github.com/HakonHarnes/img-clip.nvim"
+    },
+    "kotlin.nvim": {
+      "rev": "d942826d58d25418da267ddd8b9a629dde95f44e",
+      "src": "https://github.com/AlexandrosAlexiou/kotlin.nvim"
+    },
     "markdown-preview.nvim": {
       "rev": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
       "src": "https://github.com/iamcco/markdown-preview.nvim"
@@ -54,9 +74,17 @@
       "rev": "2431902e78b76f435542d1e606f08475360068ca",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
+    "nui.nvim": {
+      "rev": "10fc361835c856ba4233ef5ea135b919bf3dce97",
+      "src": "https://github.com/MunifTanjim/nui.nvim"
+    },
     "nvim": {
       "rev": "426dbebe06b5c69fd846ceb17b42e12f890aedf1",
       "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-cmp": {
+      "rev": "2ffe79f1f021def8dd1fcd81deb16f1bb0d989f3",
+      "src": "https://github.com/hrsh7th/nvim-cmp"
     },
     "nvim-dap": {
       "rev": "45a69eba683a2c448dd9ecfc4de89511f0646b5f",
@@ -78,6 +106,10 @@
       "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
+    "nvim-web-devicons": {
+      "rev": "58447c1fca354bbf184425e4a8d01deecbd6f3c4",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
     "oil.nvim": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
       "src": "https://github.com/stevearc/oil.nvim"
@@ -93,6 +125,10 @@
     "render-markdown.nvim": {
       "rev": "0fd43fb4b1f073931c4b481f5f3b7cea3749e190",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "snacks.nvim": {
+      "rev": "882c996cf28183f4d63640de0b4c02ec886d01f2",
+      "src": "https://github.com/folke/snacks.nvim"
     },
     "telescope-fzf-native.nvim": {
       "rev": "6fea601bd2b694c6f2ae08a6c6fab14930c60e2c",

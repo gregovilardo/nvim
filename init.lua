@@ -1,3 +1,6 @@
+-- Kotlin server shared by droid.nvim.
+vim.env.KOTLIN_LSP_DIR = vim.fn.expand("~/.local/share/kotlin-lsp/kotlin-server-263.6379.0")
+
 vim.loader.enable()
 -- Hook para actualizar parsers automáticamente al instalar/actualizar nvim-treesitter
 vim.api.nvim_create_autocmd("User", {
@@ -60,6 +63,8 @@ add_github_plugins({
 
 	"lewis6991/async.nvim",
 	"theprimeagen/refactoring.nvim",
+
+	"rizukirr/droid-nvim",
 })
 
 vim.pack.add({
@@ -78,8 +83,19 @@ vim.pack.add({
 require("mason").setup()
 
 -- this enable the server that we define in lsp/
-local servers =
-	{ "clangd", "lua_ls", "marksman", "pyright", "rust_analyzer", "zls", "htmx", "html", "typescript_language_server" }
+local servers = {
+	"clangd",
+	"lua_ls",
+	"marksman",
+	"pyright",
+	"rust_analyzer",
+	"zls",
+	"htmx",
+	"html",
+	"typescript_language_server",
+	"ols",
+	"glsl_analyzer",
+}
 vim.lsp.enable(servers)
 
 -- stand alone plugins without config or with priority

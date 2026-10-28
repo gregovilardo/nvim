@@ -48,7 +48,9 @@ require("telescope").setup({
 
 vim.keymap.set("n", "<space>ff", builtin.find_files, { desc = "Find files in cwd" })
 vim.keymap.set("n", "<space>fh", builtin.help_tags, { desc = "Help tags" })
-vim.keymap.set("n", "<space>fs", builtin.live_grep, { desc = "Find string in cwd" })
+vim.keymap.set("n", "<space>fs", function()
+	builtin.live_grep({ additional_args = { "--glob", "!**/docs/**" } })
+end, { desc = "Find string in cwd" })
 vim.keymap.set("n", "<space>fr", builtin.oldfiles, { desc = "Find recent files" })
 vim.keymap.set("n", "<space>dw", builtin.diagnostics, { desc = "Diagnostic in current workspace" })
 vim.keymap.set("n", "<leader>db", function()
